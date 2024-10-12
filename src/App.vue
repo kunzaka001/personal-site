@@ -1,4 +1,7 @@
+<!--change icon linked in-->
+
 <script setup lang="ts">
+import { Vue3Marquee } from 'vue3-marquee';
 </script>
 
 <template>
@@ -42,8 +45,13 @@
           <h1 class="title-font tracking-in-expand sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Hello, I am Kun
             <br class="hidden lg:inline-block">My name is Teetouch Noppakun.
           </h1>
-          <p class="mb-8 leading-relaxed">I am currently a high school student. Who like to try out new things. I want
+          <p class="mb-3 leading-relaxed">I am currently a high school student. Who like to try out new things. I want
             to mastered in multile fields/careers.</p>
+          <div class="flex space-x-6 mb-6">
+            <p style="font-size: large; font-weight: bold;">Web Deverloper 🧑🏻‍💻</p>
+            <p style="font-size: large; font-weight: bold;">Mobile App Deverloper 📱</p>
+          </div>
+
           <div class="flex justify-center">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-wide">Click!</div>
@@ -55,7 +63,7 @@
                         d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z">
                       </path>
                     </svg>
-                    <a>Github</a>
+                    <a href="https://github.com/kunzaka001">Github</a>
                   </div>
                 </li>
                 <li>
@@ -66,7 +74,7 @@
                         d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm1.942 4a3 3 0 0 0-2.847 2.051l-.044.133-.004.012c-.042.126-.055.167-.042.195.006.013.02.023.038.039.032.025.08.064.146.155A1 1 0 0 0 6 17h6a1 1 0 0 0 .811-.415.713.713 0 0 1 .146-.155c.019-.016.031-.026.038-.04.014-.027 0-.068-.042-.194l-.004-.012-.044-.133A3 3 0 0 0 10.059 14H7.942Z"
                         clip-rule="evenodd" />
                     </svg>
-                    <a>Contact me</a>
+                    <a>LinkedIn</a>
                   </div>
 
                 </li>
@@ -78,6 +86,36 @@
           <img class="object-cover object-center jello-diagonal-1 rounded-lg" alt="hero"
             src="https://dummyimage.com/720x600">
         </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills">
+      <div class="mt-6 mb-96">
+        <div class="mb-4">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">My skils</h1>
+          <p>js/ts, html/css, react, nextjs, python, firebase, thunkable</p>
+        </div>
+
+        <div>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Used Tech!</h1>
+          <Vue3Marquee>
+            <img height=" 200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height=" 200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height=" 200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height=" 200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+            <img height="200" width="300" src="./assets/mockup.jpeg" />
+          </Vue3Marquee>
+        </div>
+
       </div>
     </section>
   </div>
