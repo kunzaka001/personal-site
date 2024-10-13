@@ -48,8 +48,10 @@ import { Vue3Marquee } from 'vue3-marquee';
           <p class="mb-3 leading-relaxed">I am currently a high school student. Who like to try out new things. I want
             to mastered in multile fields/careers.</p>
           <div class="flex space-x-6 mb-6">
-            <p style="font-size: large; font-weight: bold;">Web Deverloper 🧑🏻‍💻</p>
-            <p style="font-size: large; font-weight: bold;">Mobile App Deverloper 📱</p>
+            <p class="underline decoration-sky-500" style="font-size: large; font-weight: bold;">Web Deverloper 🧑🏻‍💻
+            </p>
+            <p class="underline decoration-sky-500" style="font-size: large; font-weight: bold;">Mobile App Deverloper
+              📱</p>
           </div>
 
           <div class="flex justify-center">
