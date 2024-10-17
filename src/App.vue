@@ -2,6 +2,16 @@
 
 <script setup lang="ts">
 import { Vue3Marquee } from 'vue3-marquee';
+import { ref } from 'vue';
+
+const disabled = ref(false)
+
+function togAnimation() {
+  disabled.value = true
+  setTimeout(() => {
+    disabled.value = false
+  }, 1500)
+}
 </script>
 
 <template>
@@ -56,7 +66,9 @@ import { Vue3Marquee } from 'vue3-marquee';
 
           <div class="flex justify-center">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-wide">Click!</div>
+              <div :class="{ shake: disabled }">
+                <div tabindex="0" role="button" class="btn btn-wide" @click="togAnimation">Click!</div>
+              </div>
               <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                 <li>
                   <div class="flex space-x-3">
@@ -97,7 +109,18 @@ import { Vue3Marquee } from 'vue3-marquee';
       <div class="mt-6 mb-96">
         <div class="mb-4">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">My skils</h1>
-          <p>js/ts, html/css, react, nextjs, python, firebase, thunkable</p>
+          <div class="mt-8">
+            <div class="flex">
+              <img class="rounded-full object-contain w-24 h-24" src="./assets/react.png" />
+              <p class="ml-6 content-center text-xl text-white">ReactJs</p>
+            </div>
+            <div class="flex">
+              <img class="rounded-full object-contain w-24 h-24" src="./assets/htmlcss.png" />
+              <p class="ml-6 content-center text-xl text-white">Html/Css</p>
+            </div>
+          </div>
+
+          <p class="font-medium ">js/ts, html/css, react, nextjs, python, firebase, thunkable</p>
         </div>
 
         <div>
